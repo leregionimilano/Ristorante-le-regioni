@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ristorante Le Regioni — cucina italiana, tradizione e ospitalità di famiglia.">
+  <title>Ristorante Le Regioni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ristorante Le Regioni">
+      <img src="assets/logo-le-regioni.png" alt="Logo Ristorante Le Regioni">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav">
+      <a href="#home">Home</a>
+      <a href="#storia">La nostra storia</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Ristorante di famiglia</p>
+        <h1>Le Regioni</h1>
+        <p class="tagline">Il ristorante è casa tua</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#menu">Scopri il menù</a>
+          <a class="button secondary" data-phone-link href="#">Prenota un tavolo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="storia" class="section split">
+      <div class="section-copy">
+        <p class="eyebrow">La nostra storia</p>
+        <h2>Benvenuti a casa nostra</h2>
+        <p>Casa è il luogo dove si torna sempre volentieri. È il profumo del pane appena sfornato, il rumore delle pentole sul fuoco, le risate attorno a una tavola e il piacere di condividere un buon piatto.</p>
+        <p>Per noi casa è famiglia, tradizione e amore per la cucina. Ogni ricetta racconta una storia e ogni ingrediente è scelto con cura, proprio come si farebbe per le persone a cui si vuole bene.</p>
+        <p><strong>Oggi vi apriamo le porte della nostra casa. Benvenuti!</strong></p>
+      </div>
+      <figure class="image-card">
+        <img src="assets/pagina-benvenuto.png" alt="Pagina di benvenuto del Ristorante Le Regioni">
+      </figure>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-heading">
+        <p class="eyebrow">La nostra cucina</p>
+        <h2>Il menù completo</h2>
+        <p>Sfoglia tutte le pagine del menù. Tocca un’immagine per aprirla a tutto schermo e leggerla comodamente.</p>
+      </div>
+
+      <div class="menu-pages">
+        <button class="menu-page" type="button" data-image="assets/01-copertina.png" data-title="Copertina">
+          <img src="assets/01-copertina.png" alt="Copertina del menù Ristorante Le Regioni" loading="lazy">
+          <span>Copertina</span>
+        </button>
+        <button class="menu-page" type="button" data-image="assets/02-benvenuto.png" data-title="Benvenuto">
+          <img src="assets/02-benvenuto.png" alt="Pagina di benvenuto" loading="lazy">
+          <span>Benvenuto</span>
+        </button>
+        <button class="menu-page" type="button" data-image="assets/03-antipasti.png" data-title="Antipasti">
+          <img src="assets/03-antipasti.png" alt="Pagina antipasti" loading="lazy">
+          <span>Antipasti</span>
+        </button>
+        <button class="menu-page" type="button" data-image="assets/04-primi-specialita.png" data-title="Primi piatti – specialità">
+          <img src="assets/04-primi-specialita.png" alt="Primi piatti specialità" loading="lazy">
+          <span>Primi – specialità</span>
+        </button>
+        <button class="menu-page" type="button" data-image="assets/05-primi.png" data-title="Primi piatti">
+          <img src="assets/05-primi.png" alt="Pagina primi piatti" loading="lazy">
+          <span>Primi piatti</span>
+        </button>
+        <button class="menu-page" type="button" data-image="assets/06-secondi-carne-1.png" data-title="Secondi piatti di carne">
+          <img src="assets/06-secondi-carne-1.png" alt="Secondi piatti di carne, prima pagina" loading="lazy">
+          <span>Secondi di carne I</span>
+        </button>
+        <button class="menu-page" type="button" data-image="assets/07-secondi-carne-2.png" data-title="Secondi piatti di carne">
+          <img src="assets/07-secondi-carne-2.png" alt="Secondi piatti di carne, seconda pagina" loading="lazy">
+          <span>Secondi di carne II</span>
+        </button>
+        <button class="menu-page" type="button" data-image="assets/08-contorni.png" data-title="Contorni">
+          <img src="assets/08-contorni.png" alt="Pagina contorni" loading="lazy">
+          <span>Contorni</span>
+        </button>
+        <button class="menu-page" type="button" data-image="assets/09-dessert.png" data-title="Dessert">
+          <img src="assets/09-dessert.png" alt="Pagina dessert" loading="lazy">
+          <span>Dessert</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="lightbox" id="menu-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Pagina del menù">
+      <button class="lightbox-close" type="button" aria-label="Chiudi">×</button>
+      <button class="lightbox-nav prev" type="button" aria-label="Pagina precedente">‹</button>
+      <figure>
+        <img src="" alt="">
+        <figcaption></figcaption>
+      </figure>
+      <button class="lightbox-nav next" type="button" aria-label="Pagina successiva">›</button>
+    </div>
+
+<section id="galleria" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Atmosfera</p>
+        <h2>Galleria</h2>
+        <p>Questa sezione è pronta per le fotografie vere del locale, dei piatti e della vostra famiglia.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-placeholder">Foto del locale</div>
+        <div class="gallery-placeholder">Foto dei piatti</div>
+        <div class="gallery-placeholder">Foto della famiglia</div>
+      </div>
+    </section>
+
+    <section id="contatti" class="section contact-section">
+      <div>
+        <p class="eyebrow">Contatti</p>
+        <h2>Vieni a trovarci</h2>
+        <dl class="contact-list">
+          <div><dt>Indirizzo</dt><dd data-address>Da inserire</dd></div>
+          <div><dt>Telefono</dt><dd><a data-phone-link data-phone-text href="#">Da inserire</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a data-whatsapp href="#">Scrivici</a></dd></div>
+          <div><dt>Instagram</dt><dd><a data-instagram href="https://www.instagram.com/leregionimilano/" target="_blank" rel="noopener">@leregionimilano</a></dd></div>
+          <div><dt>Orari</dt><dd data-hours>Da inserire</dd></div>
+        </dl>
+      </div>
+      <div class="contact-card">
+        <h3>Prenotazioni</h3>
+        <p>Per prenotare un tavolo chiamaci o scrivici su WhatsApp.</p>
+        <a class="button primary" data-whatsapp href="#">Prenota su WhatsApp</a>
+        <a class="button secondary" data-maps href="#">Apri la mappa</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo-le-regioni.png" alt="">
+    <p>© <span id="year"></span> Ristorante Le Regioni</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
